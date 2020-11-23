@@ -1,0 +1,147 @@
+<h1>
+<a id="user-content-dedeleted" class="anchor" href="#dedeleted" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dedeleted</h1>
+<p>中文社交平台转载/备份 Bot</p>
+<h2>
+<a id="user-content-基本功能" class="anchor" href="#%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基本功能</h2>
+<p>Dedeleted 是个 <a href="https://core.telegram.org/bots/inline" rel="nofollow">Inline Bot</a>，可以直接通过下列方式使用（不区分大小写）：</p>
+<pre><code>@DedeletedBot url
+</code></pre>
+<p>将中文社交平台上的文章备份并转载到 <a href="https://telegram.org/" rel="nofollow">Telegram</a> 平台上。给 Dedeleted 一个内容的链接 <code>url</code>，回复转发的内容。</p>
+<p>也可以将 <code>url</code> 直接私信发给本 Bot。</p>
+<p>目前支持的平台和内容见下表：</p>
+<table>
+<thead>
+<tr>
+<th align="center">平台</th>
+<th align="center">备份文字/图片</th>
+<th align="center">备份视频</th>
+<th align="center">免登录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="#weibo">微博</a></td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">⍻</td>
+</tr>
+<tr>
+<td align="center"><a href="#zhihu">知乎</a></td>
+<td align="center">✓</td>
+<td align="center">✗</td>
+<td align="center">✗</td>
+</tr>
+<tr>
+<td align="center"><a href="#wechat">微信</a></td>
+<td align="center">✓</td>
+<td align="center">✗</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td align="center"><a href="#media">任意媒体链接</a></td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+</tr>
+</tbody>
+</table>
+<p>注意：文字与图片会被转载在 <a href="https://telegra.ph" rel="nofollow">Telegra.ph</a> 上，超过一定长度的内容可能被分成多篇备份；视频都会以 Telegram 消息的形式发送，但有 50MB 的大小限制。</p>
+<p>将来会考虑加入豆瓣小组帖子和微博文章等内容。</p>
+<h3>
+<a id="user-content--微博" class="anchor" href="#-%E5%BE%AE%E5%8D%9A" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="user-content-weibo"></a> 微博</h3>
+<p><a href="https://weibo.com" rel="nofollow">微博</a>。</p>
+<p>支持网页版、手机版或是手机国际版的分享链接例如：</p>
+<pre><code>@DedeletedBot https://weibo.com/2803301701/JummswXqm
+@DedeletedBot https://m.weibo.cn/detail/4572358007854926
+@DedeletedBot http://weibointl.api.weibo.com/share/184529863.html?weibo_id=4572358007854926
+</code></pre>
+<p>视频会以 Telegram 消息的形式发送，但有 50MB 的大小限制。</p>
+<p>部分内容需要登录才能获取，暂不支持微博文章。</p>
+<h3>
+<a id="user-content--知乎" class="anchor" href="#-%E7%9F%A5%E4%B9%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="user-content-zhihu"></a> 知乎</h3>
+<p><a href="https://www.zhihu.com" rel="nofollow">知乎</a>回答和专栏文章，链接格式：</p>
+<pre><code>@DedeletedBot https://www.zhihu.com/question/395525046/answer/1284606651
+@DedeletedBot https://www.zhihu.com/answer/1284606651
+@DedeletedBot https://zhuanlan.zhihu.com/p/89274560
+</code></pre>
+<p>暂不支持内容中的视频，暂不支持知乎想法。必须登录。</p>
+<h3>
+<a id="user-content--微信" class="anchor" href="#-%E5%BE%AE%E4%BF%A1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="user-content-wechat"></a> 微信</h3>
+<p><a href="https://mp.weixin.qq.com" rel="nofollow">微信</a>公众号的文章，链接格式：</p>
+<pre><code>@DedeletedBot https://mp.weixin.qq.com/s/NnmgcJRAurTsCxTbCo7Mmw
+</code></pre>
+<p>暂不支持转发视频，无需登录。</p>
+<h3>
+<a id="user-content--任意媒体链接" class="anchor" href="#-%E4%BB%BB%E6%84%8F%E5%AA%92%E4%BD%93%E9%93%BE%E6%8E%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="user-content-media"></a> 任意媒体链接</h3>
+<p>任何无需登录即可访问的图片/视频的外网链接，例如</p>
+<pre><code>@DedeletedBot https://wx3.sinaimg.cn/images/default_d_h_mw690.gif
+@DedeletedBot https://www.apple.com/105/media/us/iphone-12-pro/2020/e70ffbd8-50f1-40f3-ac36-0f03a15ac314/anim/hero/large.mp4
+</code></pre>
+<p>媒体文件也都有 50MB 的大小限制。</p>
+<h2>
+<a id="user-content-设置" class="anchor" href="#%E8%AE%BE%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="user-content-setup"></a>设置</h2>
+<p>所有设置用命令均需要私信直接发送给本 Bot。</p>
+<h3>
+<a id="user-content-启用或禁用-dedeleted" class="anchor" href="#%E5%90%AF%E7%94%A8%E6%88%96%E7%A6%81%E7%94%A8-dedeleted" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>启用或禁用 Dedeleted</h3>
+<p>可以直接在聊天框中使用，无需设置。</p>
+<h3>
+<a id="user-content-获取-telegraph-帐号" class="anchor" href="#%E8%8E%B7%E5%8F%96-telegraph-%E5%B8%90%E5%8F%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>获取 Telegra.ph 帐号</h3>
+<p>本 Bot 会为每个用户自动建立一个 Telegra.ph 帐号，用来发表转发的文章。如果你需要获取这个帐号的信息，使用这个命令：</p>
+<pre><code>/telegraph-account
+</code></pre>
+<p>返回的信息将包含一个 <code>Access Token</code>，详情请见 <a href="https://telegra.ph/api" rel="nofollow">Telegraph API</a>。</p>
+<p>使用这个 <code>Access Token</code> 可以用来编辑已发表的内容等。注意请不要撤回（Revoke）这个帐号，如果需要重新建立帐号请使用这个命令：</p>
+<pre><code>/new-telegraph-account
+</code></pre>
+<h3>
+<a id="user-content-设置登录状态" class="anchor" href="#%E8%AE%BE%E7%BD%AE%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>设置登录状态</h3>
+<p>使用以下命令设置登录状态：</p>
+<pre><code>/cookie source_type [cookie_values]
+</code></pre>
+<p><code>source_type</code> 为指定网站的名称，<code>cookie_values</code> 为 Cookie 的内容。</p>
+<p>如果不提供 <code>cookie_values</code>，则表示显示在该网站的当前登录状态。</p>
+<p><code>source_type</code> 必须是以下几项之一：</p>
+<ul>
+<li><code>weibo</code></li>
+<li><code>zhihu</code></li>
+</ul>
+<h4>
+<a id="user-content-取得-cookie-的办法" class="anchor" href="#%E5%8F%96%E5%BE%97-cookie-%E7%9A%84%E5%8A%9E%E6%B3%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>取得 Cookie 的办法</h4>
+<p>首先在浏览器中登录目标网站。建议使用隐私模式开一个新的窗口，这可以保证登录状态不会与在浏览器中已经登录的帐号冲突。</p>
+<ul>
+<li>微博请在手机版网站登录：<a href="https://m.weibo.cn" rel="nofollow">https://m.weibo.cn</a>
+</li>
+<li>知乎在主页登录即可：<a href="https://www.zhihu.com" rel="nofollow">https://www.zhihu.com</a>
+</li>
+</ul>
+<p>以 Chrome 为例，获取 Cookie 的步骤：</p>
+<ul>
+<li>在登录后再次访问上述链接。</li>
+<li>使用 <code>Ctrl+Shift+I</code> 打开开发者工具窗口，切换到 Network 选项卡。</li>
+<li>刷新页面，在开发者工具中找到 Name 为当前网址的那一行（通常为第一项），单击选中。</li>
+<li>在详细信息中找到 <code>Request Headers</code>，复制 <code>cookie: </code> 之后的全部内容（如下图），即为上述的 <code>cookie_values</code>。</li>
+</ul>
+<blockquote>
+<p>注意：把 Cookie 发送给第三方程序有一定的风险，本 Bot 承诺不会将 Cookie 用于指定用户或群使用以外的任何目的。</p>
+</blockquote>
+<p><a href="./docs/get-cookie.png" target="_blank" rel="noopener noreferrer"><img src="./docs/get-cookie.png" alt="" style="max-width:100%;"></a></p>
+<p>登录状态在一定时间之后可能会失效，需要重新设置否则会无法正常使用本 Bot。</p>
+<h3>
+<a id="user-content-aws-s3-设置" class="anchor" href="#aws-s3-%E8%AE%BE%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AWS S3 设置</h3>
+<p>有时候过大的图片和视频无法上传至 Telegra.ph 和 Telegram 的服务器，此时可以选用 AWS S3 作为备用存储平台，需要设置一个 S3 Bucket：</p>
+<pre><code>/config-s3 {"accessPoint":"ACCESS_POINT_NAME","accountID":"ACCOUNT_ID","bucket":"BUCKET_NAME","region":"REGION"}
+</code></pre>
+<p>必须提供如上的 JSON，四个属性缺一不可。Bucket 需要开启 Public Access 以允许外网访问。</p>
+<h3>
+<a id="user-content-共享登录状态与-aws-s3-设置" class="anchor" href="#%E5%85%B1%E4%BA%AB%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E4%B8%8E-aws-s3-%E8%AE%BE%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>共享登录状态与 AWS S3 设置</h3>
+<p>如果想与朋友共享登录状态和 AWS S3 设置，可以使用以下命令加入一个共享组：</p>
+<pre><code>/share [group_name]
+</code></pre>
+<p><code>group_name</code> 为一个不包含空格的任意名字，加入同一个共享组的人会共享使用登录状态和 AWS S3 的设置。如果同一个共享组中有多人设置了登录状态，则每次转发时会随机使用其中的一个或多个登录状态。</p>
+<p>如果 <code>group_name</code> 为空，显示已经加入的共享组信息。</p>
+<h2>
+<a id="user-content-声明" class="anchor" href="#%E5%A3%B0%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>声明</h2>
+<p>本 Bot 不会保存任何必要信息以外的数据，参见：<a href="https://core.telegram.org/bots#privacy-mode" rel="nofollow">隐私模式</a></p>
+<p>本 Bot 将会在完成更多功能之后开源。</p>
+<p>Dedeleted 为免费使用，但使用本 Bot 的一切后果由用户自行承担。</p>
+
